@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Мета-теги для SEO -->
+    <title>Wabba Wazza</title>
+
+    <link rel="icon" type="image/ico" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class='main-container'>
+        <img src='./images/logo.png' class='logo' />
+        <img src='./images/text.png' class='text' />
+        <audio id="player" controls autoplay>
+            <source src="./images/wabba.mp3" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <script>
+        var player = document.getElementById('player');
+
+        document?.body?.addEventListener('mouseenter', () => player.play())
+        document?.body?.addEventListener('click', () => player.play())
+
+    </script>
+</body>
+
+</html>
